@@ -12,4 +12,4 @@ class Ingredients(models.Model):
     
 class Menu_items(models.Model):
     dish_name = (models.CharField(max_length=30))
-    country = (models.ForeignKey(Country, on_delete=models.CASCADE, related_name= ' Menu'))
+    country = (models.ForeignKey(Country, on_delete= models.CASCADE, related_name= 'Menu'))
