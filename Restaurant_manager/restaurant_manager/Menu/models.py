@@ -8,8 +8,8 @@ class Country(models.Model):
 class Ingredients(models.Model):
     ingr_name = (models.CharField(max_length=20))
     ingr_type = (models.CharField(max_length=20)) # especificar si es especia, fruto, proteina, etc.
-    country = (models.ForeignKey(Country, on_delete= models.CASCADE, related_name= 'ingredients', default='not specified'))
+    country = (models.ForeignKey(Country, on_delete= models.CASCADE, related_name= 'ingredients', default= 1))
     
 class Menu_items(models.Model):
     dish_name = (models.CharField(max_length=30))
-    country = (models.ForeignKey(Country, on_delete= models.CASCADE, related_name= 'Menu', default='not especified'))
+    country = (models.ForeignKey(Country, on_delete= models.CASCADE, related_name= 'Menu', default=1))
