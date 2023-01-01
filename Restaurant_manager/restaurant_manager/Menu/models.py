@@ -13,3 +13,5 @@ class Ingredients(models.Model):
 class Menu_items(models.Model):
     dish_name = (models.CharField(max_length=30))
     country = (models.ForeignKey(Country, on_delete= models.CASCADE, related_name= 'Menu'))
+
+    # practicar como agregar datos a las tablas y despues obtener los datos de la shell

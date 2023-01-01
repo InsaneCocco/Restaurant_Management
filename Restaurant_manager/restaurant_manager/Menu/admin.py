@@ -5,5 +5,3 @@ from .models import Menu_items, Country, Ingredients
 admin.site.register(Country)
 admin.site.register(Ingredients)
 admin.site.register(Menu_items)
-
-# 
