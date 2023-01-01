@@ -4,6 +4,7 @@ from django.db import models
 
 class Country(models.Model):
     country_name = (models.CharField(max_length=25))
+    # como es PK de otros modelos se tiene que llenar antes que los demas modelos.
 
 class Ingredients(models.Model):
     ingr_name = (models.CharField(max_length=20))
@@ -13,6 +14,7 @@ class Ingredients(models.Model):
 class Menu_items(models.Model):
     dish_name = (models.CharField(max_length=30))
     country = (models.ForeignKey(Country, on_delete= models.CASCADE, related_name= 'Menu'))
+    price = (models.IntegerField(default= 100))
 
 
     # practicar como agregar datos a las tablas y despues obtener los datos de la shell
