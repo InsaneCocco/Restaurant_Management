@@ -19,3 +19,4 @@ class Menu_items(models.Model):
     # practicar como hacer merge y pull request para poder hacer commits en git
 
 
+
