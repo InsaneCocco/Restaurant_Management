@@ -3,5 +3,6 @@ from django.http import HttpResponse
 
 
 def menu_disp(request):
-    return HttpResponse('Here will be displayed the menu')
+    return HttpResponse(""" En esta pantalla se va a mostrar el menu cumpleto, donde venga el nombre, precio y de donde es el platillo
+    """)
     
