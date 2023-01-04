@@ -23,4 +23,6 @@ urlpatterns = [
     path('daily/', include('Daily_sell.urls')),
     path('order/', include('Order.urls')),
     path('menu/', include('Menu.urls')),
+    path('emp/', include('Employee.urls')),
+
 ]

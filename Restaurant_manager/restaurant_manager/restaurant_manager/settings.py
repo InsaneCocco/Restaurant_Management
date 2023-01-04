@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'Menu',
     'Daily_sell',
     'Order',
+    'Employees',
 ]
 
 MIDDLEWARE = [
