@@ -9,6 +9,3 @@ def menu_disp(request):
     tambien tiene que ser dinamico y si le picas a un platillo te muestra las caracteristicas de cada platillo
     """)
 
-
-
-    
