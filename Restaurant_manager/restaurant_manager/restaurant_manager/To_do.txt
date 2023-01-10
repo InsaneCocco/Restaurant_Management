@@ -1,2 +1,4 @@
 
-1.- create a requirements.txtof the project
+1.- agregar algo de funcionalidad a la pagina en el menu
+2.- crear un FK de los meseros para saber cual mesero atendio que mesa (este modelo puede estar en daily sell)
+
