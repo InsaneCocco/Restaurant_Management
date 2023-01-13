@@ -8,6 +8,3 @@ class Daily_sellM(models.Model):
     waiter = (models.ForeignKey(Waiter, on_delete= models.CASCADE, related_name= 'waiter'))
     Dish = models.CharField(max_length=50)
     Quantity = models.IntegerField()
-    
-    
-
