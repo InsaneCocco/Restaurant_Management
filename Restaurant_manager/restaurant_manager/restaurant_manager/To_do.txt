@@ -1,5 +1,5 @@
 
 1.- agregar algo de funcionalidad a la pagina en el menu
-2.- el forms.py que esta en la app de menu deberia de estar en la app de Employees, se tiene que hacer ese cambio
+
 
 
