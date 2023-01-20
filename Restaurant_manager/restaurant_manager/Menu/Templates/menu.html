@@ -7,7 +7,13 @@
     <title>Document</title>
 </head>
 <body>
+    {% if menu %}
     <h1>Menu</h1>
-    <h1> {{about}} </h1>
+    {% for item in menu %}
+    <p>{{item.dish_name}} : {{item.price}}</p>
+    {% endfor %}
+    {% else %}
+    <p> No hay platillos</p>
+    {% endif %}
 </body>
 </html>
