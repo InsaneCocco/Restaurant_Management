@@ -6,6 +6,9 @@ class Country(models.Model):
     country_name = (models.CharField(max_length=25))
     # como es PK de otros modelos se tiene que llenar antes que los demas modelos.
 
+    def __str__(self) -> str:
+        return self.country_name
+
     class Meta:
         verbose_name = 'Country'
         verbose_name_plural = 'Countries'
@@ -15,6 +18,9 @@ class Ingredients(models.Model):
     ingr_type = (models.CharField(max_length=20)) # especificar si es especia, fruto, proteina, etc.
     country = (models.ForeignKey(Country, on_delete= models.CASCADE, related_name= 'ingredients'))
 
+    def __str__(self) -> str:
+        return self.ingr_name
+
     class Meta:
         verbose_name = 'Ingredient'
         verbose_name_plural = 'Ingredients'
@@ -23,6 +29,9 @@ class Menu_items(models.Model):
     dish_name = (models.CharField(max_length=30))
     country = (models.ForeignKey(Country, on_delete= models.CASCADE, related_name= 'Menu'))
     price = (models.IntegerField(default= 100))
+
+    def __str__(self) -> str:
+        return self.dish_name
 
     class Meta:
         verbose_name = 'Menu item'
