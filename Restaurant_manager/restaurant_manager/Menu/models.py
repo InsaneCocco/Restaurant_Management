@@ -4,7 +4,7 @@ from django.db import models
 
 class Country(models.Model):
     country_name = (models.CharField(max_length=25))
-    # como es PK de otros modelos se tiene que llenar antes que los demas modelos.
+    # como es FK de otros modelos se tiene que llenar antes que los demas modelos.
 
     def __str__(self) -> str:
         return self.country_name
